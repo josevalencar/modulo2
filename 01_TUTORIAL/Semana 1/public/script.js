@@ -1,0 +1,4 @@
+function chora(){
+    alert('CHAMA')
+}
+
