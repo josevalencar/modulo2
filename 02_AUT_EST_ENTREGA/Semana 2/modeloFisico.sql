@@ -31,5 +31,6 @@ CREATE TABLE IF NOT EXISTS "habilidades" (
 	"nota"	INTEGER,
 	PRIMARY KEY("cod_habilidades")
 );
-INSERT INTO "habilidades" VALUES (2,NULL,NULL);
+INSERT INTO "formacao" ("cod_formacao","nome_curso","data_inicio","data_fim","descricao_curso") VALUES (1,'eng computacao','2022-08-02','2026-06-02','um curso muito legal');
+INSERT INTO "habilidades" ("cod_habilidades","ferramenta","nota") VALUES (1,'photoshop',4);
 COMMIT;
