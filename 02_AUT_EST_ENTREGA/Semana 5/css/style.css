@@ -119,7 +119,7 @@ img {
 }
 
 .l-header {
-    /* posicionando a lista dos itens deum curriculo */
+    /* posicionando a lista dos itens de um curriculo */
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -363,4 +363,111 @@ img {
 .scrolltop {
     position: fixed;
     right: 1rem;
+}
+
+/*===== MEDIA QUERIES =====*/
+
+@media screen and (max-width: 520px) {
+    .nav__list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem .5rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        margin: 3rem 0;
+    }
+
+    .bd-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .l-header,
+    .scrolltop {
+        display: none;
+    }
+
+    .resume {
+        display: grid;
+        grid-template-columns: .5fr 1fr;
+        background-color: var(--container-color);
+        box-shadow: 0 0 4px rgba(13, 13, 13.15);
+    }
+
+    .resume__left {
+        background-color: var(--container-color);
+    }
+
+    .resume__left,
+    .resume__right {
+        padding: 0 1.5rem;
+    }
+
+    .section-title,
+    .profile__description {
+        text-align: initial;
+    }
+
+    .home__container {
+        gap: 1.5rem;
+    }
+
+    .home__button-movil {
+        display: none;
+    }
+
+    .references__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1128px) {
+    body {
+        margin: 3rem 0;
+    }
+
+    .bd-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .l-header,
+    .scrolltop {
+        display: none;
+    }
+
+    .resume {
+        display: grid;
+        grid-template-columns: .5fr 1fr;
+        background-color: var(--container-color);
+        box-shadow: 0 0 4px rgba(13, 13, 13.15);
+    }
+
+    .resume__left {
+        background-color: var(--container-color);
+    }
+
+    .resume__left,
+    .resume__right {
+        padding: 0 1.5rem;
+    }
+
+    .section-title,
+    .profile__description {
+        text-align: initial;
+    }
+
+    .home__container {
+        gap: 1.5rem;
+    }
+
+    .home__button-movil {
+        display: none;
+    }
+
+    .references__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
