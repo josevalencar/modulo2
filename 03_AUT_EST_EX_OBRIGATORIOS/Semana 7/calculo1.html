@@ -10,13 +10,13 @@
 
 <body>
     <h1>Tabuada - monte a sua</h1>
-    Montar tabuada de: <input type="number" id="valor" value="">
+    Montar tabuada de: <input type="number" id="valor" value="" required>
     <br>
     Começar multiplicando por: <input type="number" id="comeco" value=""> <br>
 
     Terminar em: <input type="number" id="fim" value=""> <br>
-    <input type="button" value="CALCULAR"> <br>
-    RESULTADO: <input type="number" id="resultado" onclick="calcular1()" readonly>
+    <input type="button" value="CALCULAR" onclick="calcular1()"> <br>
+    RESULTADO: <div id="resultado"></div>
 
     <script src="script.js"></script>
 </body>
